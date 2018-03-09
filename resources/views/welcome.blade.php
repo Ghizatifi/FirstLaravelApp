@@ -34,11 +34,12 @@
                 font-size: 96px;
             }
         </style>
+        <link rel="stylesheet" href="<?php echo asset('css/main.css');?>" type="text/css">
     </head>
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">ELATIFI GHIZLANE</div>
+                <div class="title myColor">ELATIFI GHIZLANE</div>
             </div>
         </div>
     </body>

@@ -12,6 +12,26 @@
 */
 
 Route::get('/', function () {
+
+   /* Schema::create('programmers' , function($myTable)
+    {
+            $myTable->increments('id');
+            $myTable->string('name');
+            $myTable->string('lastname',30);
+            $myTable->string('description',500);
+            $myTable->date('created');
+            $myTable->string('age');
+            $myTable->timestamps();
+         });*/
+
+// Schema::table('programmers' , function($myTable)
+//  {
+//      $myTable->dropColumn('age');
+//     $myTable->string('fullname');
+ 
+// });
+
+
     return view('welcome');
 });
 
@@ -20,7 +40,7 @@ Route::get('about', function () {
 });
 
 Route::get('about/{Var}', function ($Var) {
-    return $Var.'welcome to my variale';
+    return $Var.'  welcome to my variale';
 });
 
 
